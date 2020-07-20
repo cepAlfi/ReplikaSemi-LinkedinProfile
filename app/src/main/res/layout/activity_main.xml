@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context="com.example.replikasemi_linkedinprofile.MainActivity">
 
 
     <ImageView
@@ -14,10 +15,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="#00B7FF"
-        android:scaleType="center"
+        android:scaleType="centerCrop"
         android:adjustViewBounds="true"
-        tools:src="@tools:sample/backgrounds/scenic"
+        android:src="@drawable/bgkaper"
         android:contentDescription="@string/your_background_cover"/>
 
     <androidx.constraintlayout.widget.Guideline
@@ -30,7 +30,7 @@
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageView3"
         android:layout_width="128dp"
-        android:layout_height="wrap_content"
+        android:layout_height="128dp"
         app:civ_border_color="#DADADA"
         app:civ_border_width="4dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
@@ -38,7 +38,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
         app:layout_constraintHorizontal_bias="0.2"
-        tools:src="@tools:sample/avatars" />
+        android:src="@drawable/pp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
@@ -58,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Iwong Panjaitan"
+        android:text="Atta Halilintar"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
